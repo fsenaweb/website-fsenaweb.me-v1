@@ -56,7 +56,7 @@ export default {
     MenuMob
   },
   beforeMount () {
-    window.addEventListener('scroll', this.displayMenu)
+    window.addEventListener('scroll', this.displayMenu, {passive: true})
   },
   mounted () {
     window.scrollTo(0, 0)
