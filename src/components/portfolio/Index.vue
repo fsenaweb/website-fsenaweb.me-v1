@@ -16,6 +16,16 @@
         <div class="content">
           <div class="column">
             <div class="img">
+              <img src="../../assets/img-mamute.jpg" alt="Projeto MAMUTE RACE RN">
+            </div>
+            <div class="text">
+              <strong>Circuito Mamute Race</strong><br>
+              No site do Circuito Mamute Race você encontra detalhes do maior evento de ciclismo da região do Alto Oeste Potiguar e confere notícias, fotos, fica antenado nas redes sociais e conhece todos os seus participantes. Projeto com design arrojado e responsivo, atendendo a todos os dispositivos e tendo um alcance maior em suas divulgações.
+            </div>
+            <a class="btn" href="https://mamuternrace.com.br/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+          </div>
+          <div class="column">
+            <div class="img">
               <img src="../../assets/img-sfp.jpg" alt="Portal SFP">
             </div>
             <div class="text">
@@ -183,18 +193,19 @@ export default {
   .content {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
     width: 100%;
     min-height: inherit;
-    justify-content: space-between;
     color: #000;
-    align-content: center;
   }
   .column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 20%;
     height: 68vh;
     margin: 10px;
     padding: 1%;
