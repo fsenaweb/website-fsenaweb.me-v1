@@ -35,6 +35,10 @@
               Norte. E como desenvolvedor web, tenho mais de 8 anos de experiência utilizando a linguagem PHP em meus
               projetos. Trabalho com ferramentas como Laravel, CodeIgniter, Lumen, Git, Docker, entre outras.</p>
 
+            <div class="ferramentas destaque">
+              Carreira desenvolvida na área de Tecnologia da Informação, com experiência em desenvolvimento de sistemas web, implantação e manutenção de sistemas, gestão de equipes.
+            </div>
+
             <p>Nos meus projetos desenvolvidos, tenho soluções completas como Progressive Web App (PWA), Sites, Sistemas
               Web, Landing Page, Single Page Application (SPA) e aplicações Mobile (Android e iOS).</p>
 
@@ -42,20 +46,63 @@
               Adonis.js, além de ferramentas frontend como Vue e React para deixar as aplicações web e mobile ainda mais
               interativas.</p>
             <div class="ferramentas">
+              <h3>HABILIDADES</h3>
               <div class="column">
-                <h3>HABILIDADES</h3>
                 <h4>HTML5/CSS3</h4>
                 <h5>
-                  <progress-bar bar-color="#dc720f" val="90" text="90%" title="90%"></progress-bar>
+                  <progress-bar bar-color="#dc720f" val="95" title="95%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
                 <h4>JS</h4>
                 <h5>
-                  <progress-bar bar-color="#dc720f" val="65" text="65%" title="65%"></progress-bar>
+                  <progress-bar bar-color="#dc720f" val="78" text="" title="78%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>JavaScript Framework VueJS</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="78" text="" title="78%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>JavaScript Framework React</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="55" text="" title="55%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>Desenvolvimento Mobile – Quasar/Ionic</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="64" text="" title="64%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
                 <h4>Designer / Wireframes</h4>
                 <h5>
-                  <progress-bar bar-color="#dc720f" val="70" text="70%" title="70%"></progress-bar>
+                  <progress-bar bar-color="#dc720f" val="83" title="83%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
+                <h4>Controle de versão – GitHub/BitBucket</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="75" title="75%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+              </div>
+              <div class="column">
+                <h4>PHP / POO</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="90" title="90%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>Frameworks PHP – Laravel / CodeIgniter</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="85" title="85%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>MicroFrameworks PHP – Lumen / Slim / Silex</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="80" title="80%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>Docker</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="47" title="47%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>Idioma – Inglês (Leitura/Escrita)</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="50" title="50%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+                <h4>Idioma – Espanhol (Leitura/Escrita)</h4>
+                <h5>
+                  <progress-bar bar-color="#dc720f" val="62" title="62%" style="margin-bottom: 20px" size="5"></progress-bar>
+                </h5>
+
               </div>
             </div>
 
@@ -210,18 +257,11 @@
     color: #555;
   }
 
-  .column:nth-child(1) {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-  }
-
   .circulo {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 10px solid #105e56;
+    border: 15px solid #105e56;
     margin: 0 auto;
     background: url("../../assets/foto-perfil.jpg");
     background-repeat: no-repeat;
@@ -229,12 +269,11 @@
     background-size: 140% 140%;
   }
 
-  .column:nth-child(1) img {
-    width: 50%;
-    height: 35%;
-    margin: 0 auto;
-    border: 10px solid #105e56;
-    border-radius: 100%;
+  .column:nth-child(1) {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
   }
 
   .column {
@@ -272,7 +311,7 @@
 
   .ferramentas {
     width: 100%;
-    min-height: 150px;
+    min-height: 50px;
     margin: 25px 0;
     padding: 15px;
     border-radius: 10px;
@@ -294,6 +333,17 @@
     margin-bottom: 10px;
   }
 
+  .ferramentas .column {
+    width: 50%;
+    padding: 3%;
+    float: left;
+  }
+
+  .destaque {
+    font-size: 90%;
+    font-weight: lighter;
+  }
+
   .fade-enter-active, .fade-leave-active {
     transition: height .4s;
     transition-timing-function: linear;
@@ -313,7 +363,7 @@
     background-attachment: fixed;
     background-position: 100% 42%;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 140vw;
     justify-content: center;
     align-content: center;
     align-self: center;
