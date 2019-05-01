@@ -47,7 +47,7 @@
               interativas.</p>
             <div class="ferramentas">
               <h3>HABILIDADES</h3>
-              <div class="column">
+              <div class="column-habilidades">
                 <h4>HTML5/CSS3</h4>
                 <h5>
                   <progress-bar bar-color="#dc720f" val="95" title="95%" style="margin-bottom: 20px" size="5"></progress-bar>
@@ -77,7 +77,7 @@
                   <progress-bar bar-color="#dc720f" val="75" title="75%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
               </div>
-              <div class="column">
+              <div class="column-habilidades">
                 <h4>PHP / POO</h4>
                 <h5>
                   <progress-bar bar-color="#dc720f" val="90" title="90%" style="margin-bottom: 20px" size="5"></progress-bar>
@@ -207,7 +207,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #000;
   }
 
   .topo h1 {
@@ -233,6 +232,7 @@
   }
 
   .body {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     width: 93vw;
@@ -307,6 +307,12 @@
 
   .column p {
     margin-bottom: 35px;
+  }
+
+  .column-habilidades {
+    width: 50%;
+    padding: 1%;
+    float: left;
   }
 
   .ferramentas {
@@ -461,6 +467,18 @@
       color: #555;
     }
 
+    .circulo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 15px solid #105e56;
+      margin: 0 auto;
+      background: url("../../assets/foto-perfil.jpg");
+      background-repeat: no-repeat;
+      background-position: -50px -10px;
+      background-size: 140% 140%;
+    }
+
     .column:nth-child(1) {
       width: 100%;
       display: flex;
@@ -496,6 +514,12 @@
       margin: 0;
       color: #105e56;
       margin-top: 20%;
+    }
+
+    .column-habilidades {
+      width: 100%;
+      padding: 1%;
+      float: left;
     }
 
     .fade-enter-active, .fade-leave-active {

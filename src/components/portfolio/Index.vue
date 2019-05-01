@@ -16,6 +16,16 @@
         <div class="content">
           <div class="column">
             <div class="img">
+              <img src="../../assets/img-redeparaiba.jpeg" alt="Projeto REDE PARAÍBA DE SUPERMERCADOS">
+            </div>
+            <div class="text">
+              <strong>Rede Paraíba de Supermercados</strong><br>
+              A Rede Paraíba de Supermercados Rede presente em 18 municípios Paraibanos, com 20 lojas e um faturamento anual (2018) aproximado de 150.000.000,00 milhões, conta com mais 350 colaboradores, 85 check-outs centro de distribuição na Capital Paraibana. Disponibilizando produtos e serviços de qualidade, com foco na excelência do atendimento e buscando contínua melhorias de processos e desenvolvimento das pessoas.
+            </div>
+            <a class="btn" href="https://redeparaibadesupermercados.com.br/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+          </div>
+          <div class="column">
+            <div class="img">
               <img src="../../assets/img-mamute.jpg" alt="Projeto MAMUTE RACE RN">
             </div>
             <div class="text">

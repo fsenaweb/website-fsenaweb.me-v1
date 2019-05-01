@@ -1,7 +1,7 @@
 <template>
     <div>
       <nav class="mobMenu">
-        <a href="#" @click="show = !show" title="Acesso ao menu mobile"><i :class="[show ? 'fas fa-times' : 'fas fa-bars']"></i></a>
+        <a href="#" @click.prevent="show = !show" title="Acesso ao menu mobile"><i :class="[show ? 'fas fa-times' : 'fas fa-bars']"></i></a>
       </nav>
       <transition name="mob-menu">
         <div v-if="show" class="menu-in">
@@ -46,7 +46,7 @@ export default {
       color: #000;
     }
     .menu-in {
-      position: absolute;
+      position: fixed;
       width: 100vw;
       height: 100vh;
       background-color: rgba(255,255,255,0.95);
