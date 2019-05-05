@@ -19,11 +19,11 @@
           <div class="box-form">
             <h2>Preencha o formulário</h2>
             <form id="contatoForm" action="" method="post">
-                <input type="text" name="name" placeholder="Nome (Obrigatório)" required>
-                <input type="email" name="email" placeholder="E-mail (Obrigatório)" required>
-                <input type="tel" name="phone" placeholder="Telefone">
-                <textarea name="message" placeholder="Deixe aqui a sua mensagem..." required></textarea>
-                <input type="submit" @click.prevent="enviaMail" value="Envie sua Mensagem">
+              <input type="text" name="name" v-model="contato.nome" placeholder="Nome (Obrigatório)" required>
+              <input type="email" name="email" v-model="contato.email" placeholder="E-mail (Obrigatório)" required>
+              <input type="tel" name="phone" v-model="contato.telefone" placeholder="Telefone">
+              <textarea name="message" v-model="contato.mensagem" placeholder="Deixe aqui a sua mensagem..." required></textarea>
+              <input type="submit" @click.prevent="enviaMail" value="Envie sua Mensagem">
             </form>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default {
     return {
       show: false,
       message: '',
-      mail: {
+      contato: {
         nome: '',
         email: '',
         telefone: '',
@@ -53,9 +53,16 @@ export default {
   },
   methods: {
     enviaMail () {
-      axios.post('https://fsenaweb.me/functions', this.mail)
-        .then(function () {
+      let { nome, email, telefone, mensagem } = this.contato
+      axios.post('https://fsenaweb.me/functions/', {
+        nome, email, telefone, mensagem
+      })
+        .then(() => {
           console.log('Email enviado!')
+          nome = ''
+          email = ''
+          telefone = ''
+          mensagem = ''
         })
         .catch(function (error) {
           console.log(error)
