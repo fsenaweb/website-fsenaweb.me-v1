@@ -41,9 +41,10 @@ export default {
       show: false,
       message: '',
       mail: {
-        subject: '',
-        body: '',
-        reply: ''
+        nome: '',
+        email: '',
+        telefone: '',
+        mensagem: ''
       }
     }
   },
@@ -52,24 +53,16 @@ export default {
   },
   methods: {
     enviaMail () {
-      var formData = new FormData(this)
-      formData.append('service_id', 'gmail')
-      formData.append('template_id', 'template_i6TG85Pm')
-      formData.append('user_id', 'user_GyuNVlnUEn3rv1hwB17TJ')
-      axios.post('https://api.emailjs.com/api/v1.0/email/send-form', {
-        data: formData,
-        contentType: false, // auto-detection
-        processData: false // no need to parse formData to string
-      })
+      axios.post('https://fsenaweb.me/functions', this.mail)
         .then(function () {
           console.log('Email enviado!')
         })
         .catch(function (error) {
           console.log(error)
         })
-    } // close function enviaMail
-  } // close methods
-} // close export
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -87,7 +80,7 @@ export default {
     flex-direction: row;
     width: 100vw;
     height: 99vh;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
     align-content: stretch;
     overflow: hidden;
@@ -97,46 +90,44 @@ export default {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 35vw;
+    width: 47vw;
     height: 100vh;
-    padding-left: 15vw;
   }
   .part1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
+    width: 25vw;
     height: 23vh;
     margin: 20vh 0 0 0;
-    font-size: 14vmin;
-    text-shadow: 2px 2px 3px #000;
-    color: #FFF;
+    font-size: 5.3em;
+    text-shadow: 1px 1px 5px #000;
     text-align: left;
     line-height: 0.9em;
     letter-spacing: -2px;
     overflow: hidden;
+    color: #FFF;
   }
   .part2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
+    width: 28vw;
     height: 18vh;
     margin-top: 5.5vh;
-    font-size: 5.7vmin;
+    font-size: 2.2em;
     font-weight: normal;
     line-height: 1.3em;
     overflow: hidden;
     color: #000;
   }
   .part2 a {
-    font-weight: bolder;
     text-decoration: none;
   }
   .contact {
     width: 100%;
-    color: #fff;
-    text-shadow: 3px 3px 0px #000;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
     text-decoration: none;
   }
   .contact:hover {
@@ -147,15 +138,15 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
     border-radius: 15px;
-    width: 40vw;
+    width: 30vw;
     height: 15vh;
     margin-top: 6vh;
-    margin-left: 10vw;
+    margin-left: 3vw;
     padding-left: 3vw;
-    font-size: 1.8vw;
-    font-weight: 400;
+    font-size: 1.3em;
+    font-weight: lighter;
     line-height: 1.6em;
     overflow: hidden;
     color: #FFF;
@@ -167,17 +158,18 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35vw;
+    width: 47vw;
     height: 100vh;
   }
   .box-form {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 35vw;
     height: 56vh;
     padding: 2.5vw;
     background-color: rgba(0,0,0, 0.3);
     border-radius: 15px;
+    margin-top: 7vh;
     color: #FFF;
   }
   form {
@@ -198,13 +190,62 @@ export default {
     height: 20vh;
   }
   input[type="submit"] {
-    height: 6vh;
+    height: 60px;
     border-radius: 10px;
     transition: background-color .3s;
     background-color: #CCC;
   }
   input[type="submit"]:hover {
     background-color: #FFF;
+  }
+  @media screen and (max-width: 1200px){
+    .modulo4 {
+      width: 100vw;
+      height: 100vh;
+      background: url("/static/assets/bckgr5.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      position: relative;
+    }
+    .part1 {
+      width: 25vw;
+      height: 23vh;
+      margin: 20vh 0 0 0;
+      font-size: 4em;
+      text-shadow: 1px 1px 5px #000;
+      text-align: left;
+      line-height: 0.9em;
+      letter-spacing: -2px;
+      overflow: hidden;
+      color: #FFF;
+    }
+    .part2 {
+      width: 28vw;
+      height: 18vh;
+      margin-top: 3.5vh;
+      font-size: 1.8em;
+      font-weight: normal;
+      line-height: 1.3em;
+      overflow: hidden;
+      color: #000;
+    }
+    .part3 {
+      background-color: rgba(0,0,0,0.3);
+      border-radius: 15px;
+      width: 30vw;
+      height: 15vh;
+      margin-top: 6vh;
+      margin-left: 3vw;
+      padding-left: 3vw;
+      font-size: 1.1em;
+      font-weight: lighter;
+      line-height: 1.6em;
+      overflow: hidden;
+      color: #FFF;
+      position: absolute;
+      bottom: 15vh;
+    }
   }
   @media screen and (max-width: 700px) {
     .modulo4 {
@@ -244,15 +285,12 @@ export default {
       padding-left: 5vw;
     }
     .part1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
       align-items: left;
       width: 100vw;
-      height: 21vh;
-      margin: 17vh 0 0 0;
-      padding-left: 8vw;
-      font-size: 9vh;
+      height: 25vh;
+      margin: 20vh 0 0 0;
+      padding-left: 15vw;
+      font-size: 5em;
       text-shadow: 1px 1px 5px #000;
       text-align: left;
       line-height: 0.9em;
@@ -261,13 +299,10 @@ export default {
       color: #FFF;
     }
     .part2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
       width: 100vw;
       height: 15vh;
-      margin-top: 0;
+      margin-top: 1vh;
       font-size: 1.8em;
       font-weight: lighter;
       line-height: 1.1em;
@@ -278,23 +313,20 @@ export default {
       text-decoration: none;
     }
     .part3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       background-color: rgba(0,0,0,0.3);
       border-radius: 15px;
       width: 85vw;
       height: 15vh;
       margin-top: 5vh;
       margin-left: 5vw;
-      padding-left: 3vw;
-      font-size: 1.1em;
+      padding-left: 5vw;
+      font-size: 1.3em;
       font-weight: lighter;
       line-height: 1.6em;
       overflow: hidden;
       color: #FFF;
       position: absolute;
-      bottom: 29vh;
+      bottom: 20vh;
     }
     .block2 {
       display: none;
