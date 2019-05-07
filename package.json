@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "v-toaster": "^1.0.3",
     "vue": "^2.5.2",
     "vue-fullpage.js": "0.0.5",
     "vue-head": "^2.1.0",

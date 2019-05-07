@@ -115,12 +115,14 @@ export default {
       })
         .then(() => {
           console.log('Email enviado!')
-          nome = ''
-          email = ''
-          telefone = ''
-          mensagem = ''
+          this.$toaster.success('Formulário enviado com sucesso!')
+          this.contato.nome = ''
+          this.contato.email = ''
+          this.contato.telefone = ''
+          this.contato.mensagem = ''
         })
         .catch(function (error) {
+          this.$toaster.error('Falha ao enviar formulário.')
           console.log(error)
         })
     }

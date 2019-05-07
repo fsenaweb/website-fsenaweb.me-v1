@@ -5,7 +5,10 @@ import App from './App'
 import router from './router'
 import VueHead from 'vue-head'
 import VueFullPage from 'vue-fullpage.js'
+import Toaster from 'v-toaster'
 
+import 'v-toaster/dist/v-toaster.css'
+Vue.use(Toaster, {timeout: 4000})
 Vue.use(VueFullPage)
 Vue.use(VueHead)
 
