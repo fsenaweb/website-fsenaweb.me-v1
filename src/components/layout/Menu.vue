@@ -3,16 +3,20 @@
     <transition name="fade">
       <h1 v-if="visible" class="logo"><router-link to="/">fsenaweb</router-link><span class="me">.me</span></h1>
     </transition>
+    <div v-if="visible" class="language">
+      <img src="./../../assets/pt_br.png" @click="changeLocale('pt_BR')" width="35" alt="Idioma Português">
+      <img src="./../../assets/usa.png" @click="changeLocale('en')"  width="35" alt="Idioma Inglês">
+    </div>
     <transition name="fade">
       <nav v-if="visible" class="fixMenu">
         <ul>
-          <li><router-link to="/sobre">Quem sou</router-link></li>
+          <li><router-link to="/sobre">{{ $t('menu.who')}}</router-link></li>
           <li>></li>
-          <li><router-link to="/blog">Blog</router-link></li>
+          <li><router-link to="/blog">{{ $t('menu.blog')}}</router-link></li>
           <li>></li>
-          <li><router-link to="/portfolio">Portfólio</router-link></li>
+          <li><router-link to="/portfolio">{{ $t('menu.portfolio')}}</router-link></li>
           <li>></li>
-          <li><router-link to="/contatos">Contatos</router-link></li>
+          <li><router-link to="/contatos">{{ $t('menu.contact')}}</router-link></li>
         </ul>
       </nav>
     </transition>
@@ -20,11 +24,11 @@
     <div v-show="sociais">
       <transition name="fade">
         <div class="social" v-if="visible">
-          <a href="http://www.fb.me/fsenaweb" target="_blank" rel="noopener noreferrer" title="Link para o nosso perfil no facebook"><i class="fab fa-facebook"></i></a>
-          <a href="http://www.instagram.com/fsenaweb" target="_blank" rel="noopener noreferrer" title="Link para o nosso perfil no instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/fsenaweb/" target="_blank" rel="noopener noreferrer" title="Link para o nosso perfil no github"><i class="fab fa-github-square"></i></a>
-          <a href="https://twitter.com/fsenaweb" target="_blank" rel="noopener noreferrer" title="Link para o nosso perfil no twitter"><i class="fab fa-twitter-square"></i></a>
-          <a href="http://www.linkedin.com/in/fsenaweb" target="_blank" rel="noopener noreferrer" title="Link para o nosso perfil no linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="http://www.fb.me/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.fb')"><i class="fab fa-facebook"></i></a>
+          <a href="http://www.instagram.com/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.insta')"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/fsenaweb/" target="_blank" rel="noopener noreferrer" :title="$t('social.git')"><i class="fab fa-github-square"></i></a>
+          <a href="https://twitter.com/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.twitter')"><i class="fab fa-twitter-square"></i></a>
+          <a href="http://www.linkedin.com/in/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.linkedin')"><i class="fab fa-linkedin"></i></a>
         </div>
       </transition>
     </div>
@@ -62,6 +66,9 @@ export default {
     window.scrollTo(0, 0)
   },
   methods: {
+    changeLocale (language) {
+      this.$i18n.locale = language
+    },
     moveSlide (slide) {
       return this.$refs.fullpage.api.moveTo(slide)
     },
@@ -154,6 +161,24 @@ export default {
     color: #20b2aa;
     font-size: 1.1rem;
     text-align: left;
+  }
+  .language {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 40vh;
+    left: 3vw;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .language img {
+    margin-bottom: 10px;
+    transition: all .3s;
+  }
+  .language img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity .3s;

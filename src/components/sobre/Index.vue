@@ -7,8 +7,8 @@
       <Menu :sociais="false"/>
       <transition appear name="fade">
         <div v-if="move" class="topo">
-          <h1>Quem sou</h1>
-          <h6>Experiência em desenvolvimento de projetos web em todos os segmentos</h6>
+          <h1>{{ $t('quemsou.title')}}</h1>
+          <h6>{{ $t('quemsou.subtitle')}}</h6>
         </div>
       </transition>
       <div class="body">
@@ -16,37 +16,32 @@
           <div class="column">
             <div class="circulo"></div>
             <h1>fsenaweb<span class="me">.me</span></h1>
-            <h2>Desenvolvendo soluções web para o sucesso dos seus negócios</h2>
+            <h2>{{ $t('quemsou.column1.description')}}</h2>
             <div class="ferramentas">
-              <h3>FORMAÇÃO</h3>
-              <h4>Graduando em tecnologia em Sistemas para Internet pela Universidade Potiguar – UNP</h4>
+              <h3>{{ $t('quemsou.column1.graduation')}}</h3>
+              <h4>{{ $t('quemsou.column1.graduationText')}}</h4>
               <br>
-              <h3>COMPETÊNCIAS PESSOAIS</h3>
-              <h4>Responsabilidade<br>
-                Espírito de Equipe<br>
-                Dedicação<br>
-                Organização<br>
+              <h3>{{ $t('quemsou.column1.skills.title')}}</h3>
+              <h4>{{ $t('quemsou.column1.skills.item1')}}<br>
+                {{ $t('quemsou.column1.skills.item2')}}<br>
+                {{ $t('quemsou.column1.skills.item3')}}<br>
+                {{ $t('quemsou.column1.skills.item4')}}<br>
               </h4>
 
             </div>
           </div>
           <div class="column">
-            <p>Muito prazer, meu nome é Matheus Ricelly, sou da cidade de Pau dos Ferros, no interior do Rio Grande do
-              Norte. E como desenvolvedor web, tenho mais de 8 anos de experiência utilizando a linguagem PHP em meus
-              projetos. Trabalho com ferramentas como Laravel, CodeIgniter, Lumen, Git, Docker, entre outras.</p>
+            <p>{{ $t('quemsou.description.part1')}}</p>
 
             <div class="ferramentas destaque">
-              Carreira desenvolvida na área de Tecnologia da Informação, com experiência em desenvolvimento de sistemas web, implantação e manutenção de sistemas, gestão de equipes.
+              {{ $t('quemsou.description.part2')}}
             </div>
 
-            <p>Nos meus projetos desenvolvidos, tenho soluções completas como Progressive Web App (PWA), Sites, Sistemas
-              Web, Landing Page, Single Page Application (SPA) e aplicações Mobile (Android e iOS).</p>
+            <p>{{ $t('quemsou.description.part3')}}</p>
 
-            <p>Sou entusiasta do mundo javascript e venho fortalecendo meus conhecimentos com o Node, Express,
-              Adonis.js, além de ferramentas frontend como Vue e React para deixar as aplicações web e mobile ainda mais
-              interativas.</p>
+            <p>{{ $t('quemsou.description.part4')}}</p>
             <div class="ferramentas">
-              <h3>HABILIDADES</h3>
+              <h3>{{ $t('quemsou.column1.DevSkill.title')}}</h3>
               <div class="column-habilidades">
                 <h4>HTML5/CSS3</h4>
                 <h5>
@@ -64,7 +59,7 @@
                 <h5>
                   <progress-bar bar-color="#dc720f" val="55" text="" title="55%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
-                <h4>Desenvolvimento Mobile – Quasar/Ionic</h4>
+                <h4>Mobile – Quasar/Ionic</h4>
                 <h5>
                   <progress-bar bar-color="#dc720f" val="64" text="" title="64%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
@@ -72,7 +67,7 @@
                 <h5>
                   <progress-bar bar-color="#dc720f" val="83" title="83%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
-                <h4>Controle de versão – GitHub/BitBucket</h4>
+                <h4>GitHub/BitBucket</h4>
                 <h5>
                   <progress-bar bar-color="#dc720f" val="75" title="75%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
@@ -94,11 +89,11 @@
                 <h5>
                   <progress-bar bar-color="#dc720f" val="47" title="47%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
-                <h4>Idioma – Inglês (Leitura/Escrita)</h4>
+                <h4>{{ $t('quemsou.column1.DevSkill.item1')}}</h4>
                 <h5>
                   <progress-bar bar-color="#dc720f" val="50" title="50%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
-                <h4>Idioma – Espanhol (Leitura/Escrita)</h4>
+                <h4>{{ $t('quemsou.column1.DevSkill.item2')}}</h4>
                 <h5>
                   <progress-bar bar-color="#dc720f" val="62" title="62%" style="margin-bottom: 20px" size="5"></progress-bar>
                 </h5>
@@ -106,7 +101,7 @@
               </div>
             </div>
 
-            <p>Conheça as minhas redes sociais, veja meus trabalhos e participe também dos projetos open-source.</p>
+            <p>{{ $t('quemsou.final')}}</p>
           </div>
         </div>
       </div>

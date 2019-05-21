@@ -6,6 +6,7 @@ import router from './router'
 import VueHead from 'vue-head'
 import VueFullPage from 'vue-fullpage.js'
 import Toaster from 'v-toaster'
+import i18n from './plugins/i18n'
 
 import 'v-toaster/dist/v-toaster.css'
 Vue.use(Toaster, {timeout: 4000})
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  i18n,
   template: '<App/>',
   components: { App }
 })

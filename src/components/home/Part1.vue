@@ -3,10 +3,8 @@
     <div class="modulo1">
       <section class="description">
         <transition name="slide-fade">
-          <h1 v-if="show">Especializado em desenvolver soluções web <br>
-            para o sucesso dos seus negócios <br>
-          <h6>Progressive Web App (PWA), Sites, Sistemas Web, Landing Page,
-            Single Page Application (SPA)</h6></h1>
+          <h1 v-if="show">{{ $t('part1.welcomeTxt') }}<br>
+          <h6>{{ $t('part1.skills') }}</h6></h1>
         </transition>
       </section>
         <div class="arrow">
@@ -49,6 +47,8 @@ export default {
     overflow: hidden;
   }
   .description h1 {
+    width: 70%;
+    float: right;
     color: #fff;
     font-size: 3.5vmax;
     font-weight: 700;
@@ -77,7 +77,7 @@ export default {
     transition: all 1s ease;
   }
   .slide-fade-leave-active {
-    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition: all .7s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
   .slide-fade-enter, .slide-fade-leave-to {
     transform: translateX(40px);

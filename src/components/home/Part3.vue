@@ -3,9 +3,9 @@
     <div class="modulo3" >
       <div class="flex-container">
         <div class="box-content">
-          <h1>Portfólio</h1>
-          <h2>Desenvolvemos as melhores soluções para sua empresa</h2>
-          <router-link to="/portfolio" class="btn-clients">Confira os trabalhos</router-link>
+          <h1>{{ $t('part3.title')}}</h1>
+          <h2>{{ $t('part3.description')}}</h2>
+          <router-link to="/portfolio" class="btn-clients">{{ $t('part3.button')}}</router-link>
         </div>
       </div>
     </div>

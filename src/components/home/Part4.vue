@@ -4,7 +4,7 @@
       <div class="box-content">
         <div class="block1">
           <div class="part1">
-            Fale <strong>Conosco</strong>
+            <strong>{{ $t('part4.title')}}</strong>
           </div>
           <div class="part2">
             <a href="tel:84999959215"><span class="contact" >+55 84 99995-9216</span></a>
@@ -17,13 +17,13 @@
         </div>
         <div class="block2">
           <div class="box-form">
-            <h2>Preencha o formulário</h2>
+            <h2>{{ $t('part4.form.title')}}</h2>
             <form id="contatoForm" action="" method="post">
-              <input type="text" name="name" v-model="contato.nome" placeholder="Nome (Obrigatório)" required>
-              <input type="email" name="email" v-model="contato.email" placeholder="E-mail (Obrigatório)" required>
-              <input type="tel" name="phone" v-model="contato.telefone" placeholder="Telefone">
-              <textarea name="message" v-model="contato.mensagem" placeholder="Deixe aqui a sua mensagem..." required></textarea>
-              <input type="submit" @click.prevent="enviaMail" value="Envie sua Mensagem">
+              <input type="text" name="name" v-model="contato.nome" :placeholder="$t('part4.form.name')" required>
+              <input type="email" name="email" v-model="contato.email" :placeholder="$t('part4.form.email')" required>
+              <input type="tel" name="phone" v-model="contato.telefone" :placeholder="$t('part4.form.phone')">
+              <textarea name="message" v-model="contato.mensagem" :placeholder="$t('part4.form.message')" required></textarea>
+              <input type="submit" @click.prevent="enviaMail" :value="$t('part4.form.button')">
             </form>
           </div>
         </div>
@@ -59,14 +59,14 @@ export default {
       })
         .then(() => {
           console.log('Email enviado!')
-          this.$toaster.success('Formulário enviado com sucesso!')
+          this.$toaster.success(this.$t('part4.form.sending'))
           this.contato.nome = ''
           this.contato.email = ''
           this.contato.telefone = ''
           this.contato.mensagem = ''
         })
         .catch(function (error) {
-          this.$toaster.error('Falha ao enviar formulário.')
+          this.$toaster.error(this.$t('part4.form.sending_error'))
           console.log(error)
         })
     }
@@ -180,6 +180,7 @@ export default {
     border-radius: 15px;
     margin-top: 7vh;
     color: #FFF;
+    overflow: hidden;
   }
   form {
     display: flex;
@@ -196,10 +197,10 @@ export default {
     border: none;
   }
   textarea {
-    height: 20vh;
+    height: 15vh;
   }
   input[type="submit"] {
-    height: 60px;
+    height: 50px;
     border-radius: 10px;
     transition: background-color .3s;
     background-color: #CCC;
