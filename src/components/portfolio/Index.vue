@@ -7,72 +7,72 @@
       <Menu :sociais="false"/>
       <transition appear name="fade">
         <div v-if="move" class="topo">
-          <h1>Portfólio</h1>
-          <h6>Desenvolvemos as melhores soluções para sua empresa</h6>
+          <h1>{{ $t('portfolio.title')}}</h1>
+          <h6>{{ $t('portfolio.subtitle')}}</h6>
         </div>
       </transition>
       <div class="body">
-        <h1>Criar meios e plataformas eficientes para seu negócio na web é nossa especialidade. <br>Conheça nossos últimos trabalhos:</h1>
+        <h1>{{ $t('portfolio.description.part1')}} <br>{{ $t('portfolio.description.part2')}}</h1>
         <div class="content">
           <div class="column">
             <div class="img">
               <img src="../../assets/img-redeparaiba.jpeg" alt="Projeto REDE PARAÍBA DE SUPERMERCADOS">
             </div>
             <div class="text">
-              <strong>Rede Paraíba de Supermercados</strong><br>
-              A Rede Paraíba de Supermercados Rede presente em 18 municípios Paraibanos, com 20 lojas e um faturamento anual (2018) aproximado de 150.000.000,00 milhões, conta com mais 350 colaboradores, 85 check-outs centro de distribuição na Capital Paraibana. Disponibilizando produtos e serviços de qualidade, com foco na excelência do atendimento e buscando contínua melhorias de processos e desenvolvimento das pessoas.
+              <strong>{{ $t('portfolio.jobs.paraiba.title')}}</strong><br>
+              {{ $t('portfolio.jobs.paraiba.description')}}
             </div>
-            <a class="btn" href="https://redeparaibadesupermercados.com.br/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+            <a class="btn" href="https://redeparaibadesupermercados.com.br/" target="_blank" rel="noopener noreferrer">{{ $t('portfolio.jobs.veja')}}</a>
           </div>
           <div class="column">
             <div class="img">
               <img src="../../assets/img-mamute.jpg" alt="Projeto MAMUTE RACE RN">
             </div>
             <div class="text">
-              <strong>Circuito Mamute Race</strong><br>
-              No site do Circuito Mamute Race você encontra detalhes do maior evento de ciclismo da região do Alto Oeste Potiguar e confere notícias, fotos, fica antenado nas redes sociais e conhece todos os seus participantes. Projeto com design arrojado e responsivo, atendendo a todos os dispositivos e tendo um alcance maior em suas divulgações.
+              <strong>{{ $t('portfolio.jobs.mamute.title')}}</strong><br>
+              {{ $t('portfolio.jobs.mamute.description')}}
             </div>
-            <a class="btn" href="https://mamuternrace.com.br/" target="_blank" rel="noopener noreferrer">Veja o projeto</a>
+            <a class="btn" href="https://mamuternrace.com.br/" target="_blank" rel="noopener noreferrer">{{ $t('portfolio.jobs.veja')}}</a>
           </div>
           <div class="column">
             <div class="img">
               <img src="../../assets/img-sfp.jpg" alt="Portal SFP">
             </div>
             <div class="text">
-              <strong>Sociedade Filarmônica Pauferrense</strong><br>
-              Portal oficial da Sociedade Filarmônica da cidade de Pau dos Ferros/RN. Contendo notícias, agenda e demais informações sobre a instituição sem fins lucrativos que incentivam a arte e cultura para crianças e jovens na cidade e região.
+              <strong>{{ $t('portfolio.jobs.filarmonica.title')}}</strong><br>
+              {{ $t('portfolio.jobs.filarmonica.description')}}
             </div>
-            <a class="btn" href="http://portalsfp.com/" target="_blank">Veja o projeto</a>
+            <a class="btn" href="http://portalsfp.com/" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
           </div>
           <div class="column">
             <div class="img">
               <img src="../../assets/img-ceamo.jpg" alt="Projeto CEAMO">
             </div>
             <div class="text">
-              <strong>Colégio CEAMO</strong><br>
-              Site institucional do Centro Educacional Aproniano Martins de Oliveira (CEAMO), na cidade de Mossoró. O projeto foi desenvolvido com toda estrutura de divulgação (através de notícias, redes sociais integrados, divulgações de boletons, entre outros) aos pais, alunos e a comunidade para conhecerem a instituição, que tem excelência em todos os níveis de ensino.
+              <strong>{{ $t('portfolio.jobs.ceamo.title')}}</strong><br>
+              {{ $t('portfolio.jobs.ceamo.description')}}
             </div>
-            <a class="btn" href="http://ceamo.com.br/" target="_blank">Veja o projeto</a>
+            <a class="btn" href="http://ceamo.com.br/" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
           </div>
           <div class="column">
             <div class="img">
               <img src="../../assets/img-git.jpg" alt="Projeto GitHub">
             </div>
             <div class="text">
-              <strong>SisHosting</strong><br>
-              Sistema de Gerenciamento de Hosting Livre. Simplificado para pequenas empresas que desejam ter o mínimo de controle dos seus clientes e controle de pagamentos. O sistema possui cadastro de clientes, cadastro dos domínios, geração da fatura, controle de pagamento, com lançamentos futuros. O aplicativo é software livre e estamos aceitando a ajuda da comunidade para ampliarmos esse projeto, implementando novos recursos para distribuição gratuita.
+              <strong>{{ $t('portfolio.jobs.sishosting.title')}}</strong><br>
+              {{ $t('portfolio.jobs.sishosting.description')}}
             </div>
-            <a class="btn" href="https://github.com/fsenaweb/SisHosting" target="_blank">Veja o projeto</a>
+            <a class="btn" href="https://github.com/fsenaweb/SisHosting" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
           </div>
           <div class="column">
             <div class="img">
               <img src="../../assets/img-git.jpg" alt="Projeto GitHub">
             </div>
             <div class="text">
-              <strong>My Song Native</strong><br>
-              My Song é um aplicativo nativo (Android ou iOS) de repertório musical, onde o usuário pesquisa pela letras das canções e tem disponível em seu dispositivo móvel a letra completa para acompanhar com algum instrumento musical ou para acompanhar junto com familiares ou amigos nos momentos de lazer. O aplicativo está aberto a comunidade e é totalmente software livre e sempre contando com a ajuda da comunidade para ampliação das funcionalidades, implementando novos recursos ou correções de bugs para distribuição gratuita.
+              <strong>{{ $t('portfolio.jobs.mysong.title')}}</strong><br>
+              {{ $t('portfolio.jobs.mysong.description')}}
             </div>
-            <a class="btn" href="https://github.com/fsenaweb/my-song-native" target="_blank">Veja o projeto</a>
+            <a class="btn" href="https://github.com/fsenaweb/my-song-native" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
           </div>
         </div>
       </div>
