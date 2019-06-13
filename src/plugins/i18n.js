@@ -80,6 +80,10 @@ const messages = {
           title: 'Colégio CEAMO',
           description: 'Site institucional do Centro Educacional Aproniano Martins de Oliveira (CEAMO), na cidade de Mossoró. O projeto foi desenvolvido com toda estrutura de divulgação (através de notícias, redes sociais integrados, divulgações de boletons, entre outros) aos pais, alunos e a comunidade para conhecerem a instituição, que tem excelência em todos os níveis de ensino.'
         },
+        superpet: {
+          title: 'Rede Super Pet PB',
+          description: 'A Rede Super Pet PB foi fundada em 2007, na cidade de João Pessoa, por oito empresários que compartilhavam de objetivos em comum: a prestação de serviços de qualidade e a referência no carinho e atenção prestados aos animais de estimação. A principal missão da Super Pet é fortalecer o segmento Pet nas regiões em que atua, assegurando aos seus associados uma marca que conserve os seus ideais e ofereça um bom planejamento estratégico de marketing e preços competitivos aos seus associados.  Atualmente contamos com 31 lojas abrangendo um número de empregos estimado em 130 colaboradores'
+        },
         sishosting: {
           title: 'SisHosting',
           description: 'Sistema de Gerenciamento de Hosting Livre. Simplificado para pequenas empresas que desejam ter o mínimo de controle dos seus clientes e controle de pagamentos. O sistema possui cadastro de clientes, cadastro dos domínios, geração da fatura, controle de pagamento, com lançamentos futuros. O aplicativo é software livre e estamos aceitando a ajuda da comunidade para ampliarmos esse projeto, implementando novos recursos para distribuição gratuita.'
@@ -180,6 +184,10 @@ const messages = {
         ceamo: {
           title: 'College CEAMO',
           description: 'Institutional site of the Aproniano Martins de Oliveira Educational Center (CEAMO), in the city of Mossoró. The project was developed with all dissemination structure (through news, integrated social networks, bootee disclosures, among others) to parents, students and the community to get to know the institution, which has excellence at all levels of education.'
+        },
+        superpet: {
+          title: 'Rede Super Pet PB',
+          description: 'The Super Pet PB Network was founded in 2007, in the city of João Pessoa, by eight business owners who shared common goals: providing quality services and reference in the care and attention given to pets. The main mission of Super Pet is to strengthen the Pet segment in the regions where it operates, assuring its members a brand that preserves its ideals and offers a good strategic marketing planning and competitive prices to its members. We currently have 31 stores covering an estimated 130 employees'
         },
         sishosting: {
           title: 'SisHosting',

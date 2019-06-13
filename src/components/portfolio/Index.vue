@@ -56,6 +56,16 @@
           </div>
           <div class="column">
             <div class="img">
+              <img src="../../assets/img-superpet.jpeg" alt="Projeto REDE SUPER PET">
+            </div>
+            <div class="text">
+              <strong>{{ $t('portfolio.jobs.superpet.title')}}</strong><br>
+              {{ $t('portfolio.jobs.superpet.description')}}
+            </div>
+            <a class="btn" href="http://redesuperpetpb.com.br/" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
+          </div>
+          <div class="column">
+            <div class="img">
               <img src="../../assets/img-git.jpg" alt="Projeto GitHub">
             </div>
             <div class="text">
