@@ -108,28 +108,26 @@ export default {
   },
   head: {
     title: {
-      inner: 'Nosso Portfólio'
+      inner: 'Nosso Portfólio - Desenvolvimento de site, sistema para internet, aplicativos para internet e intranet, Progressive Web App (PWA), Single Page Application (SPA)'
     },
     // Meta tags
     meta: [
-      {
-        name: 'description',
-        content: 'Desenvolvemos as melhores soluções para sua empresa',
+      { name: 'application-name',
+        content: 'fsenaweb.me' },
+      { name: 'description',
+        content: 'Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet',
         id: 'desc'
       },
       // Twitter
-      {
-        name: 'twitter:title',
+      { name: 'twitter:title',
         content: 'fsenaweb.me'
       },
       // with shorthand
-      {
-        n: 'twitter:description',
-        c: 'fsenaweb.me - Nosso Portfólio - Desenvolvemos as melhores soluções para sua empresa'
+      { n: 'twitter:description',
+        c: 'fsenaweb.me - Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
       },
-      {
-        property: 'og:title',
-        content: 'fsenaweb.me - Nosso Portfólio - Desenvolvemos as melhores soluções para sua empresa'
+      { property: 'og:title',
+        content: 'fsenaweb.me - Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
       }
     ],
     // link tags
@@ -168,7 +166,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 50vh;
+    height: 37vh;
     background: url("/static/assets/bckgr3.jpg");
     background-attachment: fixed;
     background-position: 50% 77%;
@@ -183,6 +181,7 @@ export default {
     display: block;
     color: #fff;
     font-size: 3.5vmax;
+    padding-top: 12vh;
   }
   .topo h6 {
     color: #fff;
@@ -279,12 +278,12 @@ export default {
     background-color: #CCC;
   }
   .fade-enter-active, .fade-leave-active {
-    transition: height .5s;
+    transition: height .3s;
     transition-timing-function: linear;
     transition-delay: 1s;
   }
   .fade-enter, .fade-leave-to {
-    height: 68vh;
+    height: 100vh;
   }
   .footer {
     display: flex;

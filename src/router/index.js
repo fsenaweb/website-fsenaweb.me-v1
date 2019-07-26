@@ -2,8 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Sobre from '@/components/sobre/Index'
 import Index from '@/components/home/Index'
-import Blog from '@/components/blog/Index'
-import PageBlog from '@/components/blog/Page'
 import Portfolio from '@/components/portfolio/Index'
 import Contact from '@/components/contato/Index'
 import Error from '@/components/layout/Error'
@@ -21,16 +19,6 @@ export default new Router({
       path: '/sobre',
       name: 'Sobre',
       component: Sobre
-    },
-    {
-      path: '/blog',
-      name: 'Blog',
-      component: Blog
-    },
-    {
-      path: '/blog/:id',
-      name: 'PageBlog',
-      component: PageBlog
     },
     {
       path: '/portfolio',

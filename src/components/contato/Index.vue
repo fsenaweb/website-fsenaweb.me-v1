@@ -23,12 +23,12 @@
           <div class="block2">
             <div class="box-form">
               <h2>{{ $t('part4.form.title')}}</h2>
-              <form id="contatoForm" action="" method="post">
+              <form id="contatoForm" @submit.prevent="enviaMail" action="" method="post">
                 <input type="text" name="name" v-model="contato.nome" :placeholder="$t('part4.form.name')" required>
                 <input type="email" name="email" v-model="contato.email" :placeholder="$t('part4.form.email')" required>
                 <input type="tel" name="phone" v-model="contato.telefone" :placeholder="$t('part4.form.phone')">
                 <textarea name="message" v-model="contato.mensagem" :placeholder="$t('part4.form.message')" required></textarea>
-                <input type="submit" @click.prevent="enviaMail" :value="$t('part4.form.button')">
+                <input type="submit"  :value="$t('part4.form.button')">
               </form>
             </div>
           </div>
@@ -56,28 +56,26 @@ export default {
   },
   head: {
     title: {
-      inner: 'Fale Conosco'
+      inner: 'Fale Conosco - Desenvolvimento de site, sistema para internet, aplicativos para internet e intranet, Progressive Web App (PWA), Single Page Application (SPA)'
     },
     // Meta tags
     meta: [
-      {
-        name: 'description',
-        content: 'Experiência em desenvolvimento de projetos para web em todos os segmentos',
+      { name: 'application-name',
+        content: 'fsenaweb.me' },
+      { name: 'description',
+        content: 'Fale Conosco - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet',
         id: 'desc'
       },
       // Twitter
-      {
-        name: 'twitter:title',
+      { name: 'twitter:title',
         content: 'fsenaweb.me'
       },
       // with shorthand
-      {
-        n: 'twitter:description',
-        c: 'fsenaweb.me - Fale Conosco - Experiência em desenvolvimento de projetos para web em todos os segmentos'
+      { n: 'twitter:description',
+        c: 'fsenaweb.me - Fale Conosco - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
       },
-      {
-        property: 'og:title',
-        content: 'fsenaweb.me - Fale Conosco - Experiência em desenvolvimento de projetos para web em todos os segmentos'
+      { property: 'og:title',
+        content: 'fsenaweb.me - Fale Conosco - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
       }
     ],
     // link tags
@@ -230,12 +228,13 @@ export default {
     display: flex;
     flex-direction: column;
     width: 35vw;
-    height: 56vh;
+    height: 63vh;
     padding: 2.5vw;
     background-color: rgba(0,0,0, 0.3);
     border-radius: 15px;
     margin-top: 7vh;
     color: #FFF;
+    overflow: hidden;
   }
   form {
     display: flex;

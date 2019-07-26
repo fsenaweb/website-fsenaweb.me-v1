@@ -8,22 +8,19 @@
       <i data-menuanchor="page1" @click="moveSlide(1)" class="far fa-circle"></i>
       <i data-menuanchor="page2" @click="moveSlide(2)" class="far fa-circle"></i>
       <i data-menuanchor="page3" @click="moveSlide(3)" class="far fa-circle"></i>
-      <i data-menuanchor="page4" @click="moveSlide(4)" class="far fa-circle"></i>
     </div>
     <full-page ref="fullpage" :options="options" id="fullpage">
       <part1></part1>
       <part2></part2>
       <part3></part3>
-      <part4></part4>
     </full-page>
   </div>
 </template>
 
 <script>
 import Part1 from '@/components/home/Part1'
-import Part2 from '@/components/home/Part2'
-import Part3 from '@/components/home/Part3'
-import Part4 from '@/components/home/Part4'
+import Part2 from '@/components/home/Part3'
+import Part3 from '@/components/home/Part4'
 import Menu from '@/components/layout/Menu'
 export default {
   name: 'App',
@@ -35,13 +32,13 @@ export default {
         scrollingSpeed: 700,
         lockAnchors: true,
         menu: '#menu',
-        anchors: ['page1', 'page2', 'page3', 'page4']
+        anchors: ['page1', 'page2', 'page3']
       }
     }
   },
   head: {
     title: {
-      inner: 'Progressive Web App (PWA), Sites, Sistemas Web, Single Page Application (SPA)'
+      inner: 'Desenvolvimento de site, sistema para internet, aplicativos para internet e intranet, Progressive Web App (PWA), Single Page Application (SPA)'
     },
     // Meta tags
     meta: [
@@ -57,10 +54,10 @@ export default {
       },
       // with shorthand
       { n: 'twitter:description',
-        c: 'fsenaweb.me - Especializado em desenvolver soluções de web para o sucesso dos seus negócios'
+        c: 'fsenaweb.me - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
       },
       { property: 'og:title',
-        content: 'fsenaweb.me - Especializado em desenvolver soluções de web para o sucesso dos seus negócios'
+        content: 'fsenaweb.me - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
       }
     ],
     // link tags
@@ -84,7 +81,7 @@ export default {
     ]
   },
   components: {
-    Menu, Part1, Part2, Part3, Part4
+    Menu, Part1, Part2, Part3
   },
   mounted () {
     this.loading = false

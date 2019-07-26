@@ -8,7 +8,6 @@
           <div class="content-menu">
             <router-link to="/">{{ $t('menu.home')}}</router-link>
             <router-link to="/sobre">{{ $t('menu.who')}}</router-link>
-            <router-link to="/blog">{{ $t('menu.blog')}}</router-link>
             <router-link to="/portfolio">{{ $t('menu.portfolio')}}</router-link>
             <router-link to="/contatos">{{ $t('menu.contact')}}</router-link>
           </div>

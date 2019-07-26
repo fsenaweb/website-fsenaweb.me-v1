@@ -12,8 +12,6 @@
         <ul>
           <li><router-link to="/sobre">{{ $t('menu.who')}}</router-link></li>
           <li>></li>
-          <li><router-link to="/blog">{{ $t('menu.blog')}}</router-link></li>
-          <li>></li>
           <li><router-link to="/portfolio">{{ $t('menu.portfolio')}}</router-link></li>
           <li>></li>
           <li><router-link to="/contatos">{{ $t('menu.contact')}}</router-link></li>
@@ -52,7 +50,7 @@ export default {
         scrollingSpeed: 700,
         lockAnchors: true,
         menu: '#menu',
-        anchors: ['page1', 'page2', 'page3', 'page4']
+        anchors: ['page1', 'page2', 'page3']
       }
     }
   },
@@ -112,7 +110,7 @@ export default {
     text-decoration: none;
   }
   ul {
-    width: 43vw;
+    width: 33vw;
     top: 3vh;
     right: 5vw;
     float: right;

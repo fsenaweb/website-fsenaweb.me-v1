@@ -129,28 +129,26 @@
     },
     head: {
       title: {
-        inner: 'Quem Somos'
+        inner: 'Quem Sou - Matheus Ricelly - Desenvolvimento de site, sistema para internet, aplicativos para internet e intranet, Progressive Web App (PWA), Single Page Application (SPA)'
       },
       // Meta tags
       meta: [
-        {
-          name: 'description',
-          content: 'Experiência em desenvolvimento de projetos para web em todos os segmentos',
+        { name: 'application-name',
+          content: 'fsenaweb.me' },
+        { name: 'description',
+          content: 'Quem Sou - Matheus Ricelly - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet',
           id: 'desc'
         },
         // Twitter
-        {
-          name: 'twitter:title',
+        { name: 'twitter:title',
           content: 'fsenaweb.me'
         },
         // with shorthand
-        {
-          n: 'twitter:description',
-          c: 'fsenaweb.me - Quem Somos - Experiência em desenvolvimento de projetos para web em todos os segmentos'
+        { n: 'twitter:description',
+          c: 'fsenaweb.me - Quem Sou - Matheus Ricelly - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
         },
-        {
-          property: 'og:title',
-          content: 'fsenaweb.me - Quem Somos - Experiência em desenvolvimento de projetos para web em todos os segmentos'
+        { property: 'og:title',
+          content: 'fsenaweb.me - Quem Sou - Matheus Ricelly - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
         }
       ],
       // link tags
@@ -193,7 +191,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 45vh;
+    height: 37vh;
     background: url("/static/assets/bckgr4.jpg");
     background-attachment: fixed;
     background-position: center top;
@@ -209,6 +207,7 @@
     display: block;
     color: #fff;
     font-size: 3.5vmax;
+    padding-top: 12vh;
   }
 
   .topo h6 {
@@ -346,13 +345,13 @@
   }
 
   .fade-enter-active, .fade-leave-active {
-    transition: height .4s;
+    transition: height .3s;
     transition-timing-function: linear;
     transition-delay: 0.6s;
   }
 
   .fade-enter, .fade-leave-to {
-    height: 60vh;
+    height: 100vh;
   }
 
   .footer {
