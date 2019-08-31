@@ -106,7 +106,8 @@ const messages = {
       insta: 'Link para o nosso perfil no Instagram',
       git: 'Link para o nosso perfil no GitHub',
       twitter: 'Link para o nosso perfil no Twitter',
-      linkedin: 'Link para o nosso perfil no Linkedin'
+      linkedin: 'Link para o nosso perfil no Linkedin',
+      medium: 'Link para o nosso perfil no Medium'
     }
   },
   'en': {
@@ -211,7 +212,8 @@ const messages = {
       insta: 'Link to our profile on Instagram',
       git: 'Link to our profile on GitHub',
       twitter: 'Link to our profile on Twitter',
-      linkedin: 'Link to our profile on Linkedin'
+      linkedin: 'Link to our profile on Linkedin',
+      medium: 'Link to our profile on Medium'
     }
   }
 }

@@ -26,6 +26,7 @@
           <a href="http://www.instagram.com/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.insta')"><i class="fab fa-instagram"></i></a>
           <a href="https://github.com/fsenaweb/" target="_blank" rel="noopener noreferrer" :title="$t('social.git')"><i class="fab fa-github-square"></i></a>
           <a href="https://twitter.com/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.twitter')"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://medium.com/@fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.medium')"><i class="fab fa-medium"></i></a>
           <a href="http://www.linkedin.com/in/fsenaweb" target="_blank" rel="noopener noreferrer" :title="$t('social.linkedin')"><i class="fab fa-linkedin"></i></a>
         </div>
       </transition>
