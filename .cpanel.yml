@@ -5,6 +5,6 @@ deployment:
     - /bin/rm $DEPLOYPATH/index.html
     - /bin/rm $DEPLOYPATH/service-worker.js
     - /bin/rm -rf $DEPLOYPATH/static/
-    - /bin/cp /dist/index.html $DEPLOYPATH
-    - /bin/cp -r /dist/static/* $DEPLOYPATH
-    - /bin cp /dist/service-worker.js $DEPLOYPATH
+    - /bin/cp /fsenaweb/dist/index.html $DEPLOYPATH
+    - /bin/cp -r /fsenaweb/dist/static/* $DEPLOYPATH
+    - /bin cp /fsenaweb/dist/service-worker.js $DEPLOYPATH
