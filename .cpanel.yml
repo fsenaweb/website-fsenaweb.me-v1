@@ -2,9 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/fsena465/public_html
-    - /bin/rm $DEPLOYPATH/index.html
-    - /bin/rm $DEPLOYPATH/service-worker.js
-    - /bin/rm -rf $DEPLOYPATH/static/
     - /bin/cp fsenaweb/dist/index.html $DEPLOYPATH
     - /bin/cp -r fsenaweb/dist/static/* $DEPLOYPATH
     - /bin cp fsenaweb/dist/service-worker.js $DEPLOYPATH
