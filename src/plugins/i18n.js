@@ -10,7 +10,7 @@ const messages = {
       skills: 'Progressive Web App (PWA), Sites, Sistemas Web, Landing Page, Single Page Application (SPA)'
     },
     part3: {
-      title: 'Portólio',
+      title: 'Portfólio',
       description: 'Desenvolvemos as melhores soluções para sua empresa',
       button: 'Confira os trabalhos'
     },
@@ -116,7 +116,7 @@ const messages = {
       skills: 'Progressive Web App (PWA), Sites, Web Systems, Landing Page, Single Page Application (SPA)'
     },
     part3: {
-      title: 'Portolio',
+      title: 'Portfolio',
       description: 'We develop the best solutions for your company',
       button: 'Check our work'
     },
