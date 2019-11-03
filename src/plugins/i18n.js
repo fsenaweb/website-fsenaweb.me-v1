@@ -117,7 +117,7 @@ const messages = {
     },
     part3: {
       title: 'Portfolio',
-      description: 'We develop the best solutions for your company',
+      description: 'We develop the best solutions for your company.',
       button: 'Check our work'
     },
     part4: {

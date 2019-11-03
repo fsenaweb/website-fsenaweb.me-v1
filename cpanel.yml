@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fsena465/public_html
+    - /bin/rm $DEPLOYPATH/index.html
+    - /bin/rm $DEPLOYPATH/service-worker.js
+    - /bin/rm -rf $DEPLOYPATH/static/
+    - /bin/cp /dist/index.html $DEPLOYPATH
+    - /bin/cp -r /dist/static/* $DEPLOYPATH
+    - /bin cp /dist/service-worker.js $DEPLOYPATH
