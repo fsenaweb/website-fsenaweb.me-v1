@@ -208,12 +208,12 @@ const messages = {
       contact: 'Contacts'
     },
     social: {
-      fb: 'Link to our profile on Facebook',
-      insta: 'Link to our profile on Instagram',
-      git: 'Link to our profile on GitHub',
-      twitter: 'Link to our profile on Twitter',
-      linkedin: 'Link to our profile on Linkedin',
-      medium: 'Link to our profile on Medium'
+      fb: 'Link to our profile on Facebook.',
+      insta: 'Link to our profile on Instagram.',
+      git: 'Link to our profile on GitHub.',
+      twitter: 'Link to our profile on Twitter.',
+      linkedin: 'Link to our profile on Linkedin.',
+      medium: 'Link to our profile on Medium.'
     }
   }
 }
