@@ -12,79 +12,9 @@
         </div>
       </transition>
       <div class="body">
-        <h1>{{ $t('portfolio.description.part1')}} <br>{{ $t('portfolio.description.part2')}}</h1>
-        <div class="content">
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-redeparaiba.jpeg" alt="Projeto REDE PARAÍBA DE SUPERMERCADOS">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.paraiba.title')}}</strong><br>
-              {{ $t('portfolio.jobs.paraiba.description')}}
-            </div>
-            <a class="btn" href="https://redeparaibadesupermercados.com.br/" target="_blank" rel="noopener noreferrer">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-mamute.jpg" alt="Projeto MAMUTE RACE RN">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.mamute.title')}}</strong><br>
-              {{ $t('portfolio.jobs.mamute.description')}}
-            </div>
-            <a class="btn" href="https://mamuternrace.com.br/" target="_blank" rel="noopener noreferrer">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-sfp.jpg" alt="Portal SFP">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.filarmonica.title')}}</strong><br>
-              {{ $t('portfolio.jobs.filarmonica.description')}}
-            </div>
-            <a class="btn" href="http://portalsfp.com/" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-ceamo.jpg" alt="Projeto CEAMO">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.ceamo.title')}}</strong><br>
-              {{ $t('portfolio.jobs.ceamo.description')}}
-            </div>
-            <a class="btn" href="http://ceamo.com.br/" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-superpet.jpeg" alt="Projeto REDE SUPER PET">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.superpet.title')}}</strong><br>
-              {{ $t('portfolio.jobs.superpet.description')}}
-            </div>
-            <a class="btn" href="http://redesuperpetpb.com.br/" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-git.jpg" alt="Projeto GitHub">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.sishosting.title')}}</strong><br>
-              {{ $t('portfolio.jobs.sishosting.description')}}
-            </div>
-            <a class="btn" href="https://github.com/fsenaweb/SisHosting" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-          <div class="column">
-            <div class="img">
-              <img src="../../assets/img-git.jpg" alt="Projeto GitHub">
-            </div>
-            <div class="text">
-              <strong>{{ $t('portfolio.jobs.mysong.title')}}</strong><br>
-              {{ $t('portfolio.jobs.mysong.description')}}
-            </div>
-            <a class="btn" href="https://github.com/fsenaweb/my-song-native" target="_blank">{{ $t('portfolio.jobs.veja')}}</a>
-          </div>
-        </div>
+        <h1>{{ $t('portfolio.description.part2')}}</h1>
+        <Medium />
+        <Github />
       </div>
       <div class="footer">
         <div class="invert">
@@ -97,68 +27,79 @@
 </template>
 
 <script>
-import Menu from '@/components/layout/Menu'
-export default {
-  name: 'Portfolio',
-  data () {
-    return {
-      loading: true,
-      move: false
-    }
-  },
-  head: {
-    title: {
-      inner: 'Nosso Portfólio - Desenvolvimento de site, sistema para internet, aplicativos para internet e intranet, Progressive Web App (PWA), Single Page Application (SPA)'
+  import Menu from '@/components/layout/Menu'
+  import Medium from './Medium'
+  import Github from './Github'
+
+  export default {
+    name: 'Portfolio',
+    data () {
+      return {
+        loading: true,
+        move: false
+      }
     },
-    // Meta tags
-    meta: [
-      { name: 'application-name',
-        content: 'fsenaweb.me' },
-      { name: 'description',
-        content: 'Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet',
-        id: 'desc'
+    head: {
+      title: {
+        inner: 'Nosso Portfólio - Desenvolvimento de site, sistema para internet, aplicativos para internet e intranet, Progressive Web App (PWA), Single Page Application (SPA)'
       },
-      // Twitter
-      { name: 'twitter:title',
-        content: 'fsenaweb.me'
-      },
-      // with shorthand
-      { n: 'twitter:description',
-        c: 'fsenaweb.me - Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
-      },
-      { property: 'og:title',
-        content: 'fsenaweb.me - Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
-      }
-    ],
-    // link tags
-    link: [
-      {
-        rel: 'canonical',
-        href: 'http://fsenaweb.me/#/portfolio/',
-        id: 'canonical'
-      },
-      {
-        rel: 'icon',
-        href: '/static/assets/favicon-16.png',
-        sizes: '16x16',
-        type: 'image/png'
-      },
-      {
-        rel: 'icon',
-        href: '/static/assets/favicon-32.png',
-        sizes: '32x32',
-        type: 'image/png'
-      }
-    ]
-  },
-  components: {
-    Menu
-  },
-  mounted () {
-    this.loading = false
-    this.move = true
+      // Meta tags
+      meta: [
+        {
+          name: 'application-name',
+          content: 'fsenaweb.me'
+        },
+        {
+          name: 'description',
+          content: 'Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet',
+          id: 'desc'
+        },
+        // Twitter
+        {
+          name: 'twitter:title',
+          content: 'fsenaweb.me'
+        },
+        // with shorthand
+        {
+          n: 'twitter:description',
+          c: 'fsenaweb.me - Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
+        },
+        {
+          property: 'og:title',
+          content: 'fsenaweb.me - Nosso Portfólio - Desenvolvimento de site, sistemas para internet, aplicativos para internet e intranet'
+        }
+      ],
+      // link tags
+      link: [
+        {
+          rel: 'canonical',
+          href: 'http://fsenaweb.me/#/portfolio/',
+          id: 'canonical'
+        },
+        {
+          rel: 'icon',
+          href: '/static/assets/favicon-16.png',
+          sizes: '16x16',
+          type: 'image/png'
+        },
+        {
+          rel: 'icon',
+          href: '/static/assets/favicon-32.png',
+          sizes: '32x32',
+          type: 'image/png'
+        }
+      ]
+    },
+    components: {
+      Medium,
+      Github,
+      Menu
+    },
+    mounted () {
+      this.loading = false
+      this.move = true
+    }
   }
-}
 </script>
 
 <style scoped>
@@ -176,6 +117,7 @@ export default {
     align-items: center;
     text-align: center;
   }
+
   .topo h1 {
     width: 85%;
     display: block;
@@ -183,19 +125,22 @@ export default {
     font-size: 3.5vmax;
     padding-top: 12vh;
   }
+
   .topo h6 {
     color: #fff;
     font-size: 1.5vmax;
   }
+
   .loading {
     display: flex;
     width: 98vw;
     height: 97vh;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     justify-content: center;
     align-items: center;
     color: #000;
   }
+
   .body {
     display: flex;
     flex-direction: column;
@@ -204,87 +149,48 @@ export default {
     background-color: #FFF;
     margin: 0 auto;
   }
+
   .body h1 {
     width: 100%;
     font-size: 1.4em;
-    margin: 4% 2%;
+    margin: 50px 20px;
   }
+
   .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    min-height: inherit;
-    color: #000;
-  }
-  .column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    width: 20%;
-    height: 68vh;
-    margin: 10px;
-    padding: 1%;
-    border: 1px solid #f9f9f9;
-    border-radius: 0 0 10px 10px;
-    transition: transform .5s;
-  }
-  .column:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 3px 5px #F1F1F1;
-  }
-  .column > .img {
-    width: 100%;
-    height: 40%;
-    margin-bottom: 10%;
-    border: 1px solid #000;
-    overflow: hidden;
-  }
-  .column > .img img {
-    width: 100%;
-    height: 100%;
-  }
-  .column > .text {
-    color: #777;
-    min-height: 40%;
-    margin-bottom: 10%;
-    font-size: 0.80em;
-    overflow: hidden;
-  }
-  .column > .text strong {
-    font-size: 16px;
-    padding-bottom: 100px;
-  }
-  .column > .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10%;
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 1px solid #CCC;
-    font-size: 0.85em;
-    transition: background-color .5s;
-  }
-  .column > a.btn {
+    align-items: flex-start;
+    width: 95%;
+    min-height: 100vh;
     color: #000;
-    text-decoration: none;
+    margin: 0 2em 4em 2em;
   }
-  .column > .btn:hover {
-    background-color: #CCC;
+
+  .content .box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
   }
+
+  .box img {
+    margin: 0.5em;
+    margin-right: 1.5em;
+  }
+
   .fade-enter-active, .fade-leave-active {
     transition: height .3s;
     transition-timing-function: linear;
     transition-delay: 1s;
   }
+
   .fade-enter, .fade-leave-to {
     height: 100vh;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -299,6 +205,7 @@ export default {
     align-content: center;
     align-self: center;
   }
+
   .invert {
     display: flex;
     flex-direction: column;
@@ -310,31 +217,37 @@ export default {
     text-align: center;
     line-height: 1.5em;
   }
+
   .invert h1 {
     color: #FFF;
     font-size: 1.5em;
     text-shadow: 2px 1px 1px #000;
   }
+
   .invert h2 {
     color: #FFF;
     font-size: 1em;
     font-weight: lighter;
     text-shadow: 2px 1px 1px #000;
   }
+
   .invert h2 a {
     color: #FFF;
     text-decoration: none;
   }
+
   .invert h3 {
     color: #FFF;
     font-size: 0.8em;
     font-weight: lighter;
     text-shadow: 2px 1px 1px #000;
   }
+
   .invert h3 a {
     color: #FFF;
     text-decoration: none;
   }
+
   @media screen and (max-width: 700px) {
     .topo {
       display: flex;
@@ -350,6 +263,7 @@ export default {
       align-items: center;
       text-align: center;
     }
+
     .topo h1 {
       width: 85%;
       display: block;
@@ -357,19 +271,23 @@ export default {
       font-size: 5vmax;
       padding-top: 8vh;
     }
+
     .topo h6 {
       color: #fff;
       font-size: 2.5vmax;
       padding: 1vw;
     }
+
     .body {
       margin-bottom: 10%;
     }
+
     .body h1 {
       width: 100%;
       font-size: 1.1em;
       margin: 4% 0%;
     }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -379,6 +297,7 @@ export default {
       color: #000;
       align-content: center;
     }
+
     .column {
       display: flex;
       flex-direction: column;
@@ -391,15 +310,18 @@ export default {
       border: 1px solid #e2e2e2;
       border-radius: 0 0 10px 10px;
     }
+
     .column:hover {
       box-shadow: 3px 3px 5px #F1F1F1;
     }
+
     .column > .img {
       width: 100%;
       height: 40%;
       margin-bottom: 10%;
       border: 1px solid #000;
     }
+
     .column > .text {
       color: #777;
       min-height: 40%;
@@ -407,6 +329,7 @@ export default {
       font-size: 0.86em;
       overflow: hidden;
     }
+
     .column > .btn {
       width: 100%;
       height: 10%;
@@ -415,17 +338,21 @@ export default {
       border: 1px solid #CCC;
       transition: background-color .5s;
     }
+
     .column > .btn:hover {
       background-color: #CCC;
     }
+
     .fade-enter-active, .fade-leave-active {
       transition: height .5s;
       transition-timing-function: linear;
       transition-delay: 1s;
     }
+
     .fade-enter, .fade-leave-to {
       height: 60vh;
     }
+
     .footer {
       display: flex;
       flex-direction: column;
@@ -440,6 +367,7 @@ export default {
       align-content: center;
       align-self: center;
     }
+
     .invert {
       display: flex;
       flex-direction: column;
@@ -451,27 +379,32 @@ export default {
       text-align: center;
       line-height: 1.5em;
     }
+
     .invert h1 {
       color: #FFF;
       font-size: 1.2em;
       text-shadow: 2px 1px 1px #000;
     }
+
     .invert h2 {
       color: #FFF;
       font-size: 1em;
       font-weight: lighter;
       text-shadow: 2px 1px 1px #000;
     }
+
     .invert h2 a {
       color: #FFF;
       text-decoration: none;
     }
+
     .invert h3 {
       color: #FFF;
       font-size: 0.8em;
       font-weight: lighter;
       text-shadow: 2px 1px 1px #000;
     }
+
     .invert h3 a {
       color: #FFF;
       text-decoration: none;

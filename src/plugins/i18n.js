@@ -50,8 +50,8 @@ const messages = {
       description: {
         part1: 'Muito prazer, meu nome é Matheus Ricelly, sou da cidade de Pau dos Ferros, no interior do Rio Grande do Norte. E como desenvolvedor web, tenho mais de 8 anos de experiência utilizando a linguagem PHP em meus projetos. Trabalho com ferramentas como Laravel, CodeIgniter, Lumen, Git, Docker, entre outras.',
         part2: 'Carreira desenvolvida na área de Tecnologia da Informação, com experiência em desenvolvimento de sistemas web, implantação e manutenção de sistemas, gestão de equipes.',
-        part3: 'Nos meus projetos desenvolvidos, tenho soluções completas como Progressive Web App (PWA), Sites, Sistemas Web, Landing Page, Single Page Application (SPA) e aplicações Mobile (Android e iOS).',
-        part4: 'Sou entusiasta do mundo javascript e venho fortalecendo meus conhecimentos com o Node, Express, Adonis.js, além de ferramentas frontend como Vue e React para deixar as aplicações web e mobile ainda mais interativas.'
+        part3: 'Nos meus projetos desenvolvidos, tenho soluções completas como Progressive Web App (PWA), Sites, Sistemas Web, Landing Page, Single Page Application (SPA).',
+        part4: 'Sou entusiasta do mundo javascript e venho fortalecendo meus conhecimentos com o Node, Express, Adonis.js, além de ferramentas frontend como Vue e React para deixar as aplicações web mais interativas.'
       },
       final: 'Conheça as minhas redes sociais, veja meus trabalhos e participe também dos projetos open-source.'
     },
@@ -61,6 +61,12 @@ const messages = {
       description: {
         part1: 'Criar meios e plataformas eficientes para seu negócio na web é nossa especialidade.',
         part2: 'Conheça nossos últimos trabalhos:'
+      },
+      articles: {
+        title: 'Artigos'
+      },
+      repository: {
+        title: 'Repositórios'
       },
       jobs: {
         veja: 'Veja o Projeto',
@@ -156,8 +162,8 @@ const messages = {
       description: {
         part1: 'My name is Matheus Ricelly, I am from the city of Pau dos Ferros, in the interior of Rio Grande do Norte. And as a web developer, I have over 8 years of experience using the PHP language in my projects. Work with tools like Laravel, CodeIgniter, Lumen, Git, Docker, among others.',
         part2: 'Career developed in the area of Information Technology, with experience in web systems development, implementation and maintenance of systems, team management.',
-        part3: 'In my developed projects, I have complete solutions like Progressive Web App (PWA), Sites, Web Systems, Landing Page, Single Page Application (SPA) and Mobile applications (Android and iOS).',
-        part4: 'I am an enthusiast of the javascript world and have been strengthening my knowledge with Node, Express, Adonis.js, and frontend tools like Vue and React to make web and mobile applications even more interactive.'
+        part3: 'In my developed projects, I have complete solutions like Progressive Web App (PWA), Sites, Web Systems, Landing Page, Single Page Application (SPA).',
+        part4: 'I am an enthusiast of the javascript world and have been strengthening my knowledge with Node, Express, Adonis.js, and frontend tools like Vue and React to make web applications even more interactive.'
       },
       final: 'Get to know my social networks, see my work and also participate in open-source projects.'
     },
@@ -166,7 +172,13 @@ const messages = {
       subtitle: 'We develop the best solutions for your company',
       description: {
         part1: 'Creating efficient media and platforms for your web business is our specialty.',
-        part2: 'Get to know our latest work:'
+        part2: 'Get to know my latest works:'
+      },
+      articles: {
+        title: 'Articles'
+      },
+      repository: {
+        title: 'Repositories'
       },
       jobs: {
         veja: 'See the Project',
