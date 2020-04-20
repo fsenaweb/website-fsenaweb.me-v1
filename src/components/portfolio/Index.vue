@@ -144,44 +144,18 @@
   .body {
     display: flex;
     flex-direction: column;
-    width: 87vw;
-    min-height: 92vh;
-    background-color: #FFF;
+    width: 85%;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .body h1 {
     width: 100%;
     font-size: 1.4em;
-    margin: 50px 20px;
+    margin: 50px 0;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 95%;
-    min-height: 100vh;
-    color: #000;
-    margin: 0 2em 4em 2em;
-  }
-
-  .content .box {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .box img {
-    margin: 0.5em;
-    margin-right: 1.5em;
-  }
-
-  .fade-enter-active, .fade-leave-active {
+    .fade-enter-active, .fade-leave-active {
     transition: height .3s;
     transition-timing-function: linear;
     transition-delay: 1s;

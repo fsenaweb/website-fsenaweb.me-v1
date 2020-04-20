@@ -57,7 +57,6 @@
           await axios.get(mediumRssFeed)
             .then(response => {
               this.articles = response.data
-              console.log(response.data)
             })
         } catch (error) {
           console.error(error)
@@ -82,9 +81,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 95%;
+    width: 100%;
     color: #000;
-    margin: 0 2em 4em 2em;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 30px;
   }
 
   .card-carousel-wrapper {
