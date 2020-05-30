@@ -31,7 +31,6 @@
         axios.get('https:api.github.com/users/fsenaweb/repos')
           .then(response => {
             const filtered = response.data.filter(item => item.fork === false)
-            console.log(response.data.filter(item => item.fork === false))
             this.repositories = filtered
           })
       }

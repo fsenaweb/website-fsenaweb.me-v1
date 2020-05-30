@@ -13,8 +13,8 @@
       </transition>
       <div class="body">
         <h1>{{ $t('portfolio.description.part2')}}</h1>
-        <Medium />
-        <Github />
+        <Medium/>
+        <Github/>
       </div>
       <div class="footer">
         <div class="invert">
@@ -98,6 +98,12 @@
     mounted () {
       this.loading = false
       this.move = true
+      this.MoveToTop()
+    },
+    methods: {
+      MoveToTop () {
+        window.scrollTo(0, 0)
+      }
     }
   }
 </script>
@@ -107,12 +113,12 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 37vh;
+    height: 400px;
     background: url("/static/assets/bckgr3.jpg");
     background-attachment: fixed;
-    background-position: 50% 77%;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 130vw;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -155,10 +161,11 @@
     margin: 50px 0;
   }
 
-    .fade-enter-active, .fade-leave-active {
-    transition: height .3s;
+  .fade-enter-active, .fade-leave-active {
+    transition: height .6s;
     transition-timing-function: linear;
     transition-delay: 1s;
+    scroll-behavior: smooth;
   }
 
   .fade-enter, .fade-leave-to {

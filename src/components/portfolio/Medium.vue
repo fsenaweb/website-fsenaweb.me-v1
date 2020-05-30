@@ -21,7 +21,11 @@
         </div>
         <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
       </div>
-
+      <div class="see-more">
+        {{ $t('portfolio.articles.seeMore') }}
+        <a href="https://medium.com/@fsenaweb" rel="noreferrer noopener" target="_blank">Medium</a> |
+        <a href="https://dev.to/fsenaweb" rel="noreferrer noopener" target="_blank">Dev.to</a>
+      </div>
   </div>
 </template>
 
@@ -234,6 +238,21 @@
     text-align: center;
     margin-bottom: 0;
     color: #42b883;
+  }
+
+  .see-more a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+  }
+
+  .see-more {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 20px
   }
 
 </style>

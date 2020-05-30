@@ -11,8 +11,8 @@ const messages = {
     },
     part3: {
       title: 'Portfólio',
-      description: 'Desenvolvemos as melhores soluções para sua empresa',
-      button: 'Confira os trabalhos'
+      description: 'Conheça um pouco sobre as atividades desenvolvidas',
+      button: 'Confira as atividades'
     },
     part4: {
       title: 'Fale Conosco',
@@ -57,13 +57,14 @@ const messages = {
     },
     portfolio: {
       title: 'Portfólio',
-      subtitle: 'Desenvolvemos as melhores soluções para sua empresa',
+      subtitle: 'Conheça algumas atividades desenvolvidas',
       description: {
         part1: 'Criar meios e plataformas eficientes para seu negócio na web é nossa especialidade.',
         part2: 'Conheça nossos últimos trabalhos:'
       },
       articles: {
-        title: 'Artigos'
+        title: 'Artigos',
+        seeMore: 'Veja todos dos artigos em'
       },
       repository: {
         title: 'Repositórios'
@@ -123,8 +124,8 @@ const messages = {
     },
     part3: {
       title: 'Portfolio',
-      description: 'We develop the best solutions for your company',
-      button: 'Check our work'
+      description: 'Know a little about the activities developed',
+      button: 'Check the activities'
     },
     part4: {
       title: 'Contact us',
@@ -169,13 +170,14 @@ const messages = {
     },
     portfolio: {
       title: 'Portfolio',
-      subtitle: 'We develop the best solutions for your company',
+      subtitle: 'Meet some activities developed',
       description: {
         part1: 'Creating efficient media and platforms for your web business is our specialty.',
         part2: 'Get to know my latest works:'
       },
       articles: {
-        title: 'Articles'
+        title: 'Articles',
+        seeMore: 'See all of the articles at'
       },
       repository: {
         title: 'Repositories'

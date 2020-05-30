@@ -191,7 +191,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 37vh;
+    height: 400px;
     background: url("/static/assets/bckgr4.jpg");
     background-attachment: fixed;
     background-position: center top;
@@ -345,9 +345,10 @@
   }
 
   .fade-enter-active, .fade-leave-active {
-    transition: height .3s;
+    transition: height .6s;
     transition-timing-function: linear;
-    transition-delay: 0.6s;
+    transition-delay: 1s;
+    scroll-behavior: smooth;
   }
 
   .fade-enter, .fade-leave-to {
