@@ -5,7 +5,8 @@
         <div class="card-carousel--card" v-for="repo in repositories">
           <img src="../../assets/repository.png" :alt="repo.name" width="100">
           <div class="card-carousel--card--footer">
-            <p class="title">{{ repo.name }}</p>
+            <p class="title">
+              <a :href="repo.html_url" target="_blank" rel="noreferrer noopener">{{ repo.name }}</a></p>
             <p class="desc">{{ repo.description }}</p>
           </div>
         </div>
@@ -30,8 +31,7 @@
       loadRepositories () {
         axios.get('https:api.github.com/users/fsenaweb/repos')
           .then(response => {
-            const filtered = response.data.filter(item => item.fork === false)
-            this.repositories = filtered
+            this.repositories = response.data.filter(item => item.fork === false)
           })
       }
     }
@@ -112,6 +112,7 @@
     font-weight: lighter;
   }
   .card-carousel--card a {
+    color: #000;
     text-decoration: none;
   }
 
